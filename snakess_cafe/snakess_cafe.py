@@ -38,7 +38,7 @@ Unicorn Tears
 """)
 
 
-dict = {
+Dictionarie = {
   "Coffee": 0,
   "Tea": 0,
   "Pie": 0,
@@ -57,20 +57,20 @@ dict = {
    "Cookies":0,
 }                      
 
-newitem=input("Please Insert New Item :").title()
+newitem=input("> ").title()
 while newitem != "Quit":
-    if(newitem in dict):
-        dict[newitem]=dict[newitem]+1
-        for item in dict:
-            if(dict[item] >0 ):
-                print("** "+  str(dict[item]) +" order of " + item+" have been added to your meal **")
+    if(newitem in Dictionarie):
+        Dictionarie[newitem]=Dictionarie[newitem]+1
+        for item in Dictionarie:
+            if(Dictionarie[item] >0 ):
+                print("** "+  str(Dictionarie[item]) +" order of " + item+" have been added to your meal **")
    
     else:
         print("the item you ordered is not on the menu but we will get it for you")
-        dict[newitem] = 1  
-        print("**"+  str(dict[newitem]) +" order of " + newitem+" have been added to your meal ** ")
+        Dictionarie[newitem] = 1  
+        print("**"+  str(Dictionarie[newitem]) +" order of " + newitem+" have been added to your meal ** ")
 
-    newitem=input("Please Insert New Item :").title()
+    newitem=input("> ").title()
 
    
 
