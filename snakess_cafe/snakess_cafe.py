@@ -58,6 +58,7 @@ Dictionarie = {
 }                      
 
 newitem=input("> ").title()
+
 while newitem != "Quit":
     if(newitem in Dictionarie):
         Dictionarie[newitem]=Dictionarie[newitem]+1
@@ -66,9 +67,8 @@ while newitem != "Quit":
                 print("** "+  str(Dictionarie[item]) +" order of " + item+" have been added to your meal **")
    
     else:
-        print("the item you ordered is not on the menu but we will get it for you")
-        Dictionarie[newitem] = 1  
-        print("**"+  str(Dictionarie[newitem]) +" order of " + newitem+" have been added to your meal ** ")
+        print("The order you want to order Not in  the menu, please order food from the menu ")
+       
 
     newitem=input("> ").title()
 
